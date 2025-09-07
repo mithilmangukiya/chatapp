@@ -17,36 +17,7 @@ const Dashboard = () => {
         setActiveView('chat')
     }
     return (
-        // <div className='bg-white p-6 rounded-lg shadow-md mt-4 flex max-w-6xl mx-auto min-h-[600px]'>
-        //     <div className='w-1/3 flex flex-col'>
-        //         <div className='mb-4 flex justify-between items-center'>
-        //             <h3 className='text-xl font-bold'>Conversations</h3>
-        //             <button
-        //                 onClick={logout}
-        //                 className='text-red-600 hover:underline'
-        //                 title='Logout'
-        //             >
-        //                 Logout
-        //             </button>
-        //         </div>
-        //         <ConversationList openChat={openChat} />
-        //     </div>
-        //     <div className='flex-1 ml-4 flex flex-col'>
-        //         {activeView === 'search' && <SearchUsers openChat={openChat} />}
-        //         {activeView === 'chat' && currentChat && (
-        //             <Chat
-        //                 conversationId={currentChat.conversationId}
-        //                 receiverId={currentChat.receiverId}
-        //                 receiverUsername={currentChat.receiverUsername}
-        //                 goBack={() => setActiveView('search')}
-        //             />
-        //         )}
-        //     </div>
-        // </div>
-
-
         <div className="bg-white p-6 rounded-xl shadow-md mt-4 flex flex-col md:flex-row max-w-6xl mx-auto min-h-[600px]">
-            {/* Sidebar */}
             <div className="w-full md:w-1/3 flex flex-col mb-6 md:mb-0 md:pr-4 border-b md:border-b-0 md:border-r">
                 <div className="mb-4 flex justify-between items-center">
                     <h3 className="text-xl font-bold">Conversations</h3>
@@ -60,7 +31,6 @@ const Dashboard = () => {
                 </div>
                 <ConversationList openChat={openChat} />
             </div>
-            {/* Right panel */}
             <div className="flex-1 md:ml-4 flex flex-col">
                 {activeView === "search" && <SearchUsers openChat={openChat} />}
                 {activeView === "chat" && currentChat && (

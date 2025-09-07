@@ -105,54 +105,6 @@ const ChatWindow = ({ conversationId, receiverId, receiverUsername, goBack }) =>
     }
 
     return (
-        // <div className="flex flex-col h-full">
-        //     <div className="flex items-center mb-4">
-        //         <button onClick={goBack} className="mr-4 text-blue-600 hover:underline">
-        //             &larr; Back
-        //         </button>
-        //         <h3 className="text-xl font-bold">Chat with {receiverUsername}</h3>
-        //     </div>
-        //     <div className="flex-grow overflow-y-auto border rounded p-4 mb-4 h-[400px] flex flex-col">
-        //         {messages.map(msg => (
-        //             <div
-        //                 key={msg._id}
-        //                 className={`mb-2 p-2 rounded max-w-[70%] ${msg.sender === user.id ? 'bg-blue-500 text-white self-end ml-auto' : 'bg-gray-200 self-start'
-        //                     }`}
-        //             >
-        //                 {msg.text && <p>{msg.text}</p>}
-        //                 {msg.mediaUrl  && (
-        //                     <>
-        //                         {msg.mediaType === "image" && (
-        //                             <img src={`${API_BASE}${msg.mediaUrl}`} alt="sent file" className="max-w-full rounded" />
-        //                         )}
-        //                         {msg.mediaType === "video" && (
-        //                             <video controls className="max-w-full rounded">
-        //                                 <source src={`${API_BASE}${msg.mediaUrl}`} type={msg.mediaType} />
-        //                                 Your browser does not support the video tag.
-        //                             </video>
-        //                         )}
-        //                     </>
-        //                 )}
-        //             </div>
-        //         ))}
-        //         <div ref={messagesEndRef} />
-        //     </div>
-        //     <div className="flex items-center space-x-2">
-        //         <textarea
-        //             placeholder="Type a message..."
-        //             value={text}
-        //             onChange={e => setText(e.target.value)}
-        //             onKeyDown={handleKeyPress}
-        //             className="flex-grow p-2 border rounded resize-none h-16"
-        //         />
-        //         <input type="file" onChange={handleFileChange} accept="image/*,video/*" />
-        //         <button onClick={sendMessage} className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-        //             Send
-        //         </button>
-        //     </div>
-        // </div>
-
-
         <div className="flex flex-col h-full">
             <div className="flex items-center mb-4">
                 <button onClick={goBack} className="mr-4 text-blue-600 hover:underline">

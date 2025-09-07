@@ -25,24 +25,6 @@ const ConversationList = ({ openChat }) => {
         }
     }
     return (
-        // <div className='w-1/3 border-r pr-4 overflow-y-auto'>
-        //     <h3 className='text-xl font-bold mb-4'>Conversations</h3>
-        //     {conversations.length === 0 && <p>No conversations yet.</p>}
-        //     {conversations.map(conv => {
-        //         const otherUser = conv.participants.find(p => p._id !== user.id)
-        //         return (
-        //             <div
-        //             key={conv._id}
-        //             className='p-2 border rounded mb-2 cursor-pointer hover:bg-gray-100'
-        //             onClick={() => openChat(conv._id, otherUser ._id, otherUser .username)}
-        //             >
-        //                 {otherUser .username}
-        //             </div>
-        //         )
-        //     })}
-        // </div>
-
-
         <div className="overflow-y-auto">
             {conversations.length === 0 && (
                 <p className="text-gray-500 text-center">No conversations yet.</p>
