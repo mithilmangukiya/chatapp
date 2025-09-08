@@ -3,7 +3,7 @@ import { AuthContext } from '../../App'
 import { apiCall } from '../../api'
 import { io } from 'socket.io-client'
 
-const API_BASE = 'http://localhost:3000' // Change if needed
+const API_BASE = 'http://localhost:3000' 
 
 const ChatWindow = ({ conversationId, receiverId, receiverUsername, goBack }) => {
     const { token, user } = useContext(AuthContext)
